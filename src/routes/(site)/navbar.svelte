@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	let header: Element;
 
 	function shrinkWhenScrolled() {
