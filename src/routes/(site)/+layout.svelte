@@ -19,7 +19,7 @@
 <div class="max-w-screen max-h-screen p-0 m-0">
 
 	<nav class="flex justify-between items-center p-3" bind:this={header}>
-		<a href="/"><img src="/dino.svg" alt="Stupid Dino Studios" width=64 height=64></a>
+		<a href="/" class="logo"><img src="/dino.svg" alt="Stupid Dino Studios" class="w-full h-full"></a>
 		<div class='btn-container'>
 			<a href="/about">about</a>
 		</div>
@@ -35,6 +35,19 @@
 	:root {
 		--nav-height: 80px;
 		--shrunk-nav-height: 60px;
+		--shrink-transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+
+	:global(.logo) {
+		height: 64px;
+		width: 64px;
+
+		transition: var(--shrink-transition);
+	}
+
+	:global(.shrunk-header > .logo) {
+		height: 54px;
+		width: 54px;
 	}
 
 	nav {
@@ -45,7 +58,7 @@
 		top: 0;
 		height: var(--nav-height);
 		
-		transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition: var(--shrink-transition);
 		
 		z-index: 1000;
 
