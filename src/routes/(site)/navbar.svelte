@@ -16,9 +16,9 @@
 
 <nav class="flex justify-between items-center p-3" bind:this={header}>
     <a href="/" class="logo"><img src="/dino.svg" alt="Stupid Dino Studios" class="w-full h-full"></a>
-    <div class='btn-container'>
-        <a href="/about">about</a>
-    </div>
+    <ul class='nav-list'>
+        <li><a href="/about">about</a></li>
+    </ul>
 </nav>
 
 <style>
@@ -62,7 +62,7 @@
 		font-size: 0.75em;
 	}
 
-	.btn-container {
+	.nav-list {
 		display: flex;
 		align-items: center;
 		justify-content: center;
