@@ -35,7 +35,7 @@
 	:root {
 		--nav-height: 80px;
 		--shrunk-nav-height: 60px;
-		--shrink-transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+		--shrink-transition: 0.2s cubic-bezier(0.3, 0.81, 0.39, 1.39);
 	}
 
 	:global(.logo) {
